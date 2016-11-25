@@ -1,0 +1,21 @@
+{
+    "name": "vsc-qml-snippets",
+    "displayName": "vsc-qml-snippets",
+    "description": "QML Snippets for VSCode",
+    "version": "0.0.1",
+    "publisher": "ThomasVogelpohl",
+    "engines": {
+        "vscode": "^1.5.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "qml",
+                "path": "./snippets/snippets.json"
+            }
+        ]
+    }
+}

@@ -1,0 +1,152 @@
+{
+	"alias": {
+		"prefix": "alias",
+		"body": "\nproperty alias ${1:name}: ${2:val}\n",
+		"description": "QML property alias",
+		"scope": "source.qml"
+	},
+	"anchors": {
+		"prefix": "anchors",
+		"body": "\nanchors.${1}: ${2:parent}.${3}\n",
+		"description": "(simple)",
+		"scope": "source.qml"
+	},
+	"anchors (all sides)": {
+		"prefix": "anchors",
+		"body": "\nanchors.left: ${1:parent}.left\nanchors.top: ${1:parent}.top\nanchors.right: ${1:parent}.right\nanchors.bottom: ${1:parent}.bottom\n",
+		"description": "(all sides)",
+		"scope": "source.qml"
+	},
+	"anchors.centerIn": {
+		"prefix": "anchors.centerIn",
+		"body": "\nanchors.centerIn: ${1:parent}\n",
+		"description": "centerIn",
+		"scope": "source.qml"
+	},
+	"anchors.fill": {
+		"prefix": "anchors.fill",
+		"body": "\nanchors.fill: ${1:parent}\n",
+		"description": "fill",
+		"scope": "source.qml"
+	},
+	"anchors.horizontalCenter": {
+		"prefix": "anchors.horizontalCenter",
+		"body": "\nanchors.horizontalCenter: ${1:parent}.horizontalCenter\n",
+		"description": "horizontal",
+		"scope": "source.qml"
+	},
+	"anchors.margins": {
+		"prefix": "anchors.margins",
+		"body": "\nanchors.margins: ${1:0}\n",
+		"description": "margins",
+		"scope": "source.qml"
+	},
+	"anchors.verticalCenter": {
+		"prefix": "anchors.verticalCenter",
+		"body": "\nanchors.verticalCenter: ${1:parent}.verticalCenter\n",
+		"description": "vertical",
+		"scope": "source.qml"
+	},
+	"color": {
+		"prefix": "color",
+		"body": "\ncolor: \"#${1}\"\n",
+		"description": "#...",
+		"scope": "source.qml"
+	},
+	"Component.onCompleted:": {
+		"prefix": "component",
+		"body": "\nComponent.onCompleted: ${1}\n",
+		"description": "Component.onCompleted{}",
+		"scope": "source.qml"
+	},
+	"connections": {
+		"prefix": "connections",
+		"body": "\nConnections {\n    target: ${1}\n    on${2}: ${3}\n}\n",
+		"description": "Connections{}",
+		"scope": "source.qml"
+	},
+	"console.log": {
+		"prefix": "console",
+		"body": "\nconsole.log(\"${1:}: \")\n",
+		"description": "console.log(\" :\")",
+		"scope": ""
+	},
+	"console.log + var": {
+		"prefix": "console",
+		"body": "\nconsole.log(\"${1:}: \" + ${2:})\n",
+		"description": "console.log(\" :\" + var)",
+		"scope": ""
+	},
+	"function": {
+		"prefix": "function",
+		"body": "\nfunction ${1:function_name}(${2:argument}) {\n    ${0:// body...}\n}",
+		"description": "function() {}",
+		"scope": "source.qml"
+	},
+	"layout": {
+		"prefix": "layout",
+		"body": "\nLayout.fillWidth: ${1:true}\nLayout.fillHeight: ${2:true}\n",
+		"description": "(all)",
+		"scope": "source.qml"
+	},
+	"layout.fillHeight": {
+		"prefix": "layout.fillHeight",
+		"body": "\nLayout.fillHeight: ${1:true}\n",
+		"description": "height",
+		"scope": "source.qml"
+	},
+	"layout.fillWidth": {
+		"prefix": "layout.fillWidth",
+		"body": "\nLayout.fillWidth: ${1:true}\n",
+		"description": "width",
+		"scope": "source.qml"
+	},
+	"mouse": {
+		"prefix": "mouse",
+		"body": "\nMouseArea {\n    anchors.fill: parent\n    cursorShape: Qt.PointingHandCursor\n    hoverEnabled: false\n    onEntered: {}\n    onExited: {}\n    onWheel: {}\n    onClicked: ${1}\n}\n",
+		"description": "MouseArea{}",
+		"scope": "source.qml"
+	},
+	"property": {
+		"prefix": "property",
+		"body": "\nproperty ${1:var} ${2:name}\n",
+		"description": "QML property",
+		"scope": "source.qml"
+	},
+	"default property": {
+		"prefix": "default property",
+		"body": "\ndefault property ${1:var} ${2:name}\n",
+		"description": "QML default property",
+		"scope": "source.qml"
+	},
+	"readonly property": {
+		"prefix": "readonly property",
+		"body": "\nreadonly property ${1:var} ${2:name}: ${3}\n",
+		"description": "QML readonly property",
+		"scope": "source.qml"
+	},
+	"QtObject": {
+		"prefix": "QtObject",
+		"body": "\nQtObject {\n    id: ${1:m}\n}\n",
+		"description": "QtObject{}",
+		"scope": "source.qml"
+	},
+	"Rectangle": {
+		"prefix": "Rectangle",
+		"body": "\nRectangle {\n    width: ${1:10}\n    height: ${2:10}\n    color: \"${3:transparent}\"\n}\n",
+		"description": "Rectangle{}",
+		"scope": "source.qml"
+	},
+	"signal": {
+		"prefix": "signal",
+		"body": "\nsignal ${1:name}(${2})\n",
+		"description": "QML signal",
+		"scope": "source.qml"
+	},
+	"stack.onStatusChanged": {
+		"prefix": "stack.onStatusChanged",
+		"body": "\nStack.onStatusChanged: {\n    if (Stack.status == Stack.Active)\n        ${1:;}\n    else if (Stack.status == Stack.Inactive)\n        ${2:;}\n}\n",
+		"description": "onStatusChanged{}",
+		"scope": "source.qml"
+	}
+}
