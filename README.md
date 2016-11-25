@@ -7,6 +7,11 @@ https://github.com/skozlovf/Sublime-QML
 
 ![Use Extension](images/animationSnippets.gif)
 
+## Prerequisites:
+The qml file extension needs to be registered as a known file type with VSCode.
+The easiest way is to use the QML language syntax extension from Baptist BENOIST: <br />
+https://github.com/bbenoist/vscode-qml
+
 ## Usage
 Type part of a snippet, press `enter`, and the snippet unfolds.
 
