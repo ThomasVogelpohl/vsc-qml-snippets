@@ -1,7 +1,7 @@
 {
     "name": "vsc-qml-snippets",
     "displayName": "QML Snippets",
-    "description": "Get QML Snippets to choose from while typing.",
+    "description": "QML Snippets to presented by IntelliSense to simplify typing.",
     "icon": "images/qt-logo.png",
 
     "version": "0.0.1",
