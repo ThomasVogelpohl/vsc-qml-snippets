@@ -1,12 +1,13 @@
 {
     "name": "vsc-qml-snippets",
-    "displayName": "vsc-qml-snippets",
-    "description": "QML Snippets for VSCode",
+    "displayName": "QML Snippets",
+    "description": "Get QML Snippets to choose from while typing.",
+    "icon": "images/qt-logo.png",
+
     "version": "0.0.1",
+    "license": "SEE LICENSE IN LICENSE.md",
     "publisher": "ThomasVogelpohl",
-    "engines": {
-        "vscode": "^1.5.0"
-    },
+    "engines": { "vscode": "0.10.x" },
     "categories": [
         "Snippets"
     ],
@@ -17,5 +18,14 @@
                 "path": "./snippets/snippets.json"
             }
         ]
-    }
+    },
+    "homepage": "https://github.com/ThomasVogelpohl/vsc-qml-snippets",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ThomasVogelpohl/vsc-qml-snippets"
+    },
+    "bugs": {
+		"url": "https://github.com/ThomasVogelpohl/vsc-qml-snippets/issues",
+		"email": "thomas.vogelpohl@freenet.de"
+	}
 }
